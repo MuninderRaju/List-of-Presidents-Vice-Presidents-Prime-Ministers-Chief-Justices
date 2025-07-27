@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>భారతదేశ ప్రముఖులు</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ramabhadra&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2; /* Bright Blue */
+            --secondary-color: #50E3C2; /* Aqua Green */
+            --header-color: #2c3e50; /* Dark Blue-Gray */
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --footer-bg: #34495e; /* Darker Blue-Gray */
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h3 {
+            font-family: 'Ramabhadra', sans-serif;
+            color: var(--header-color);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #d35400; /* Orange */
+            font-weight: bold; /* <<<< BOLD added here */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Style for flag image inside h1 */
+        h1 img {
+            height: 1em; /* Scales with the font size */
+            width: auto;
+            margin: 0 15px;
+            vertical-align: middle;
+        }
+
+        p.intro {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        select, button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        select {
+            background-color: #fff;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            background-color: #357ABD; /* Darker Blue */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #dataDisplay {
+            overflow-x: auto; /* For small screens */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e9ecef;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: var(--footer-bg);
+            color: white;
+            font-size: 1em;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h1 img {
+                margin: 0 8px;
+            }
+            .controls {
+                flex-direction: column;
+            }
+            select, button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHklEQVR4Xu2aP0/DQBSGM/0gSpI2qYgJKR+QEoWCgYQNv0ArLRs1nZ2MP0BFRUUNDAw0MvAXiAkm1kqgKCbJky5wZSySSqCkJ/sl94S73b379u3lHRYEc8bMGVABdoB2wCnwAuzv0gV4AP6AN+DA/ynwBpwA58C73Qk8ATeBpw3gBvwS+V4B5z+FfgG/wH3gGfA4bQ1yA/K+HfBKOAGfHj0C5sA9oA94CzwCLgGvwFngXG6pAfK+D3C9D/gG9oF/gMHgBfDk+Q54AP6qQ/4W+A0eAD+BNw2QgW3gf/UAPGzABfA/cO07sAn8A8aD3p/QDd1M5nOAR4AbwC/wDLgJjAG/gC7gQzAMnO/3wBPgC3AGvAF3gGfABfB94NzvA0/Ad+AN+ABcAW+BvY8l+AV8Aj8B38AZcAV8A14Br4ED4K1zW4MvwDngEXgf8wJcAR+AN+AN8Ak4AZx7DtymAPwGfgAPgZfAA3AGzBqQ9d8Bb4EvwGkg3/s0OAV+AS/AE2AeuC4jRxvwBbyDbQ17gL/Ak2AfuEkAs8AZ8Ak4A8bA4/YqIB4Gj7FbsAOcNnOArfXzIAF2gG1g7f0o4Fvga/AFfAKeByzgFpgD3oAPwL/gY8A8MMBf4O+zYBP4H/g4/ABuA/8sYBP49/lP0PEO+Bz4AfwZ+Cj/xW8B4X+K4n8A439I8b8AEf8/iv8BiP8zxP8BxP+T4n8B4v9A/p9H/D+R/ycA/0/k/wkA/5/J/xMA/v+b8f9N/P+H8/8fIP6/n/n/DxD/Dyj+HyD+H1D8PyD+n1D8PyD+31D8PyD+X1D8vyD+n1L8vyD+P1f8vyD+v1f8vyD+v1n8vyD+/wH//wf8/wf8/wf8/yf8/wf8/yf8/wf8/yf8/yf8/yfg/yf8/yfg/yf8/yfg/yf8/wcc/wcB539NfF8A+P5F8X0B4PsXxfcFgO9fFN8XAL7/U3xfAPj+TfF9AeD7N8X3BYDvf1j8v+HfHxT/D/z7QxT/D/z7QxT/D/z7QxT/D/z7Q/L/z7/A438p8r8CAAAA//8DAFrAQRxEHnZ5AAAAAElFTkSuQmCC" alt="Indian Flag">
+            భారతదేశ ప్రముఖులు
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHklEQVR4Xu2aP0/DQBSGM/0gSpI2qYgJKR+QEoWCgYQNv0ArLRs1nZ2MP0BFRUUNDAw0MvAXiAkm1kqgKCbJky5wZSySSqCkJ/sl94S73b379u3lHRYEc8bMGVABdoB2wCnwAuzv0gV4AP6AN+DA/ynwBpwA58C73Qk8ATeBpw3gBvwS+V4B5z+FfgG/wH3gGfA4bQ1yA/K+HfBKOAGfHj0C5sA9oA94CzwCLgGvwFngXG6pAfK+D3C9D/gG9oF/gMHgBfDk+Q54AP6qQ/4W+A0eAD+BNw2QgW3gf/UAPGzABfA/cO07sAn8A8aD3p/QDd1M5nOAR4AbwC/wDLgJjAG/gC7gQzAMnO/3wBPgC3AGvAF3gGfABfB94NzvA0/Ad+AN+ABcAW+BvY8l+AV8Aj8B38AZcAV8A14Br4ED4K1zW4MvwDngEXgf8wJcAR+AN+AN8Ak4AZx7DtymAPwGfgAPgZfAA3AGzBqQ9d8Bb4EvwGkg3/s0OAV+AS/AE2AeuC4jRxvwBbyDbQ17gL/Ak2AfuEkAs8AZ8Ak4A8bA4/YqIB4Gj7FbsAOcNnOArfXzIAF2gG1g7f0o4Fvga/AFfAKeByzgFpgD3oAPwL/gY8A8MMBf4O+zYBP4H/g4/ABuA/8sYBP49/lP0PEO+Bz4AfwZ+Cj/xW8B4X+K4n8A439I8b8AEf8/iv8BiP8zxP8BxP+T4n8B4v9A/p9H/D+R/ycA/0/k/wkA/5/J/xMA/v+b8f9N/P+H8/8fIP6/n/n/DxD/Dyj+HyD+H1D8PyD+n1D8PyD+31D8PyD+X1D8vyD+n1L8vyD+P1f8vyD+v1f8vyD+v1n8vyD+/wH//wf8/wf8/wf8/yf8/wf8/yf8/wf8/yf8/yf8/yfg/yf8/yfg/yf8/yfg/yf8/wcc/wcB539NfF8A+P5F8X0B4PsXxfcFgO9fFN8XAL7/U3xfAPj+TfF9AeD7N8X3BYDvf1j8v+HfHxT/D/z7QxT/D/z7QxT/D/z7QxT/D/z7Q/L/z7/A438p8r8CAAAA//8DAFrAQRxEHnZ5AAAAAElFTkSuQmCC" alt="Indian Flag">
+        </h1>
+        <p class="intro">List of Presidents, Vice Presidents, Prime Ministers, Chief Justices.</p>
+
+        <div class="controls">
+            <select id="positionSelector" onchange="displayData()">
+              <option value="presidents">రాష్ట్రపతులు (Presidents)</option>
+              <option value="vice_presidents">ఉపరాష్ట్రపతులు (Vice Presidents)</option>
+              <option value="prime_ministers">ప్రధానమంత్రులు (Prime Ministers)</option>
+              <option value="chief_justices">ప్రధాన న్యాయమూర్తులు (Chief Justices)</option>
+            </select>
+            <div>
+                <button onclick="switchLanguage('te')">తెలుగు</button>
+                <button onclick="switchLanguage('en')">English</button>
+            </div>
+        </div>
+        
+        <div id="dataDisplay">
+          </div>
+    </div>
+
+    <footer>
+        A Muninder Raju SA Maths GHS Eidgaon Nirmal
+    </footer>
+
+<script>
+  const data = {
+    "presidents": {
+      "te": { "title": "భారత రాష్ట్రపతులు", "headers": ["పేరు", "పదవీకాలం"], "list": [ ["డాక్టర్ బాబూ రాజేంద్ర ప్రసాద్", "26 జనవరి 1950 - 13 మే 1962"], ["డాక్టర్ సర్వేపల్లి రాధాకృష్ణన్", "13 మే 1962 - 13 మే 1967"], ["డాక్టర్ జాకీర్ హుస్సేన్", "13 మే 1967 - 3 మే 1969"], ["వరాహగిరి వెంకట గిరి", "24 ఆగస్టు 1969 - 24 ఆగస్టు 1974"], ["ఫక్రుద్దీన్ అలీ అహ్మద్", "24 ఆగస్టు 1974 - 11 ఫిబ్రవరి 1977"], ["నీలం సంజీవ రెడ్డి", "25 జూలై 1977 - 25 జూలై 1982"], ["జ్ఞానీ జైల్ సింగ్", "25 జూలై 1982 - 25 జూలై 1987"], ["రామస్వామి వెంకటరామన్", "25 జూలై 1987 - 25 జూలై 1992"], ["డాక్టర్ శంకర్ దయాళ్ శర్మ", "25 జూలై 1992 - 25 జూలై 1997"], ["కొచెరిల్ రామన్ నారాయణన్", "25 జూలై 1997 - 25 జూలై 2002"], ["డాక్టర్ ఏ.పి.జె. అబ్దుల్ కలాం", "25 జూలై 2002 - 25 జూలై 2007"], ["శ్రీమతి ప్రతిభా పాటిల్", "25 జూలై 2007 - 25 జూలై 2012"], ["ప్రణబ్ ముఖర్జీ", "25 జూలై 2012 - 25 జూలై 2017"], ["రామ్ నాథ్ కోవింద్", "25 జూలై 2017 - 25 జూలై 2022"], ["శ్రీమతి ద్రౌపది ముర్ము", "25 జూలై 2022 - ప్రస్తుతం"] ] },
+      "en": { "title": "Presidents of India", "headers": ["Name", "Tenure"], "list": [ ["Dr. Babu Rajendra Prasad", "26 January 1950 - 13 May 1962"], ["Dr. Sarvepalli Radhakrishnan", "13 May 1962 - 13 May 1967"], ["Dr. Zakir Husain", "13 May 1967 - 3 May 1969"], ["Varahagiri Venkata Giri", "24 August 1969 - 24 August 1974"], ["Fakhruddin Ali Ahmed", "24 August 1974 - 11 February 1977"], ["Neelam Sanjiva Reddy", "25 July 1977 - 25 July 1982"], ["Giani Zail Singh", "25 July 1982 - 25 July 1987"], ["Ramaswamy Venkataraman", "25 July 1987 - 25 July 1992"], ["Dr. Shankar Dayal Sharma", "25 July 1992 - 25 July 1997"], ["Kocheril Raman Narayanan", "25 July 1997 - 25 July 2002"], ["Dr. A. P. J. Abdul Kalam", "25 July 2002 - 25 July 2007"], ["Smt. Pratibha Patil", "25 July 2007 - 25 July 2012"], ["Pranab Mukherjee", "25 July 2012 - 25 July 2017"], ["Ram Nath Kovind", "25 July 2017 - 25 July 2022"], ["Smt. Droupadi Murmu", "25 July 2022 - Incumbent"] ] }
+    },
+    "vice_presidents": {
+        "te": { "title": "భారత ఉపరాష్ట్రపతులు", "headers": ["పేరు", "పదవీకాలం"], "list": [ ["సర్వేపల్లి రాధాకృష్ణన్", "13 మే 1952 – 12 మే 1962"], ["జాకీర్ హుస్సేన్", "13 మే 1962 – 12 మే 1967"], ["వి. వి. గిరి", "13 మే 1967 – 3 మే 1969"], ["గోపాల్ స్వరూప్ పాఠక్", "31 ఆగస్టు 1969 – 30 ఆగస్టు 1974"], ["బి. డి. జట్టి", "31 ఆగస్టు 1974 – 30 ఆగస్టు 1979"], ["మహమ్మద్ హిదాయతుల్లా", "31 ఆగస్టు 1979 – 30 ఆగస్టు 1984"], ["రామస్వామి వెంకట్రామన్", "31 ఆగస్టు 1984 – 24 జూలై 1987"], ["శంకర్ దయాళ్ శర్మ", "3 సెప్టెంబర్ 1987 – 24 జూలై 1992"], ["కె. ఆర్. నారాయణన్", "21 ఆగస్టు 1992 – 24 జూలై 1997"], ["కృష్ణకాంత్", "21 ఆగస్టు 1997 – 27 జూలై 2002"], ["భైరాన్‌సింగ్ షెకావత్", "19 ఆగస్టు 2002 – 21 జూలై 2007"], ["మహమ్మద్ హమీద్ అన్సారీ", "11 ఆగస్టు 2007 – 10 ఆగస్టు 2017"], ["వెంకయ్య నాయుడు", "11 ఆగస్టు 2017 – 10 ఆగస్టు 2022"], ["జగదీప్ ధన్‌ఖర్", "11 ఆగస్టు 2022 – ప్రస్తుతం"] ] },
+        "en": { "title": "Vice Presidents of India", "headers": ["Name", "Tenure"], "list": [ ["Sarvepalli Radhakrishnan", "13 May 1952 – 12 May 1962"], ["Zakir Husain", "13 May 1962 – 12 May 1967"], ["V. V. Giri", "13 May 1967 – 3 May 1969"], ["Gopal Swarup Pathak", "31 August 1969 – 30 August 1974"], ["B. D. Jatti", "31 August 1974 – 30 August 1979"], ["Mohammad Hidayatullah", "31 August 1979 – 30 August 1984"], ["R. Venkataraman", "31 August 1984 – 24 July 1987"], ["Shankar Dayal Sharma", "3 September 1987 – 24 July 1992"], ["K. R. Narayanan", "21 August 1992 – 24 July 1997"], ["Krishan Kant", "21 August 1997 – 27 July 2002"], ["Bhairon Singh Shekhawat", "19 August 2002 – 21 July 2007"], ["Mohammad Hamid Ansari", "11 August 2007 – 10 August 2017"], ["Venkaiah Naidu", "11 August 2017 – 10 August 2022"], ["Jagdeep Dhankhar", "11 August 2022 – Incumbent"] ] }
+    },
+    "prime_ministers": {
+        "te": { "title": "భారత ప్రధానమంత్రులు", "headers": ["పేరు", "పదవీకాలం"], "list": [ ["జవహర్‌లాల్ నెహ్రూ", "15 ఆగస్టు 1947 – 27 మే 1964"], ["గుల్జారీలాల్ నందా (తాత్కాలిక)", "27 మే 1964 – 9 జూన్ 1964"], ["లాల్ బహదూర్ శాస్త్రి", "9 జూన్ 1964 – 11 జనవరి 1966"], ["గుల్జారీలాల్ నందా (తాత్కాలిక)", "11 జనవరి 1966 – 24 జనవరి 1966"], ["ఇందిరా గాంధీ", "24 జనవరి 1966 – 24 మార్చి 1977"], ["మొరార్జీ దేశాయ్", "24 మార్చి 1977 – 28 జూలై 1979"], ["చరణ్ సింగ్", "28 జూలై 1979 – 14 జనవరి 1980"], ["ఇందిరా గాంధీ", "14 జనవరి 1980 – 31 అక్టోబర్ 1984"], ["రాజీవ్ గాంధీ", "31 అక్టోబర్ 1984 – 2 డిసెంబర్ 1989"], ["వి. పి. సింగ్", "2 డిసెంబర్ 1989 – 10 నవంబర్ 1990"], ["చంద్రశేఖర్", "10 నవంబర్ 1990 – 21 జూన్ 1991"], ["పి. వి. నరసింహారావు", "21 జూన్ 1991 – 16 మే 1996"], ["అటల్ బిహారీ వాజ్‌పేయి", "16 మే 1996 – 1 జూన్ 1996"], ["హెచ్. డి. దేవెగౌడ", "1 జూన్ 1996 – 21 ఏప్రిల్ 1997"], ["ఇందర్ కుమార్ గుజ్రాల్", "21 ఏప్రిల్ 1997 – 19 మార్చి 1998"], ["అటల్ బిహారీ వాజ్‌పేయి", "19 మార్చి 1998 – 22 మే 2004"], ["డా. మన్మోహన్ సింగ్", "22 మే 2004 – 26 మే 2014"], ["నరేంద్ర మోదీ", "26 మే 2014 – ప్రస్తుతం"] ] },
+        "en": { "title": "Prime Ministers of India", "headers": ["Name", "Tenure"], "list": [ ["Jawaharlal Nehru", "15 August 1947 – 27 May 1964"], ["Gulzari Lal Nanda (acting)", "27 May 1964 – 9 June 1964"], ["Lal Bahadur Shastri", "9 June 1964 – 11 January 1966"], ["Gulzari Lal Nanda (acting)", "11 January 1966 – 24 January 1966"], ["Indira Gandhi", "24 January 1966 – 24 March 1977"], ["Morarji Desai", "24 March 1977 – 28 July 1979"], ["Charan Singh", "28 July 1979 – 14 January 1980"], ["Indira Gandhi", "14 January 1980 – 31 October 1984"], ["Rajiv Gandhi", "31 October 1984 – 2 December 1989"], ["V. P. Singh", "2 December 1989 – 10 November 1990"], ["Chandra Shekhar", "10 November 1990 – 21 June 1991"], ["P. V. Narasimha Rao", "21 June 1991 – 16 May 1996"], ["Atal Bihari Vajpayee", "16 May 1996 – 1 June 1996"], ["H. D. Deve Gowda", "1 June 1996 – 21 April 1997"], ["Inder Kumar Gujral", "21 April 1997 – 19 March 1998"], ["Atal Bihari Vajpayee", "19 March 1998 – 22 May 2004"], ["Dr. Manmohan Singh", "22 May 2004 – 26 May 2014"], ["Narendra Modi", "26 May 2014 – Incumbent"] ] }
+    },
+    "chief_justices": {
+        "te": { "title": "సుప్రీంకోర్టు ప్రధాన న్యాయమూర్తులు", "headers": ["పేరు", "పదవీకాలం"], "list": [ ["హెచ్. జె. కానియా", "26 జనవరి 1950 – 6 నవంబర్ 1951"],["ఎం. పతంజలి శాస్త్రి", "7 నవంబర్ 1951 – 3 జనవరి 1954"],["మెహర్ చంద్ మహాజన్", "4 జనవరి 1954 – 22 డిసెంబర్ 1954"],["బిజన్ కుమార్ ముఖర్జీ", "23 డిసెంబర్ 1954 – 31 జనవరి 1956"],["సుధీ రంజన్ దాస్", "1 ఫిబ్రవరి 1956 – 30 సెప్టెంబర్ 1959"],["భువనేశ్వర్ ప్రసాద్ సిన్హా", "1 అక్టోబర్ 1959 – 31 జనవరి 1964"],["పి. బి. గజేంద్రగడ్కర్", "1 ఫిబ్రవరి 1964 – 15 మార్చి 1966"],["ఎ. కె. సర్కార్", "16 మార్చి 1966 – 29 జూన్ 1966"],["కె. సుబ్బారావు", "30 జూన్ 1966 – 11 ఏప్రిల్ 1967"],["కె. ఎన్. వాంచూ", "12 ఏప్రిల్ 1967 – 24 ఫిబ్రవరి 1968"],["ఎం. హిదాయతుల్లా", "25 ఫిబ్రవరి 1968 – 16 డిసెంబర్ 1970"],["జె. సి. షా", "17 డిసెంబర్ 1970 – 21 జనవరి 1971"],["ఎస్. ఎం. సిక్రి", "22 జనవరి 1971 – 25 ఏప్రిల్ 1973"],["ఎ. ఎన్. రే", "26 ఏప్రిల్ 1973 – 27 జనవరి 1977"],["ఎం. హమీదుల్లా బేగ్", "28 జనవరి 1977 – 21 ఫిబ్రవరి 1978"],["వై. వి. చంద్రచూడ్", "22 ఫిబ్రవరి 1978 – 11 జూలై 1985"],["పి. ఎన్. భగవతి", "12 జూలై 1985 – 20 డిసెంబర్ 1986"],["ఆర్. ఎస్. పాఠక్", "21 డిసెంబర్ 1986 – 18 జూన్ 1989"],["ఇ. ఎస్. వెంకటరామయ్య", "19 జూన్ 1989 – 17 డిసెంబర్ 1989"],["ఎస్. ముఖర్జీ", "18 డిసెంబర్ 1989 – 25 సెప్టెంబర్ 1990"],["రంగనాథ్ మిశ్రా", "26 సెప్టెంబర్ 1990 – 24 నవంబర్ 1991"],["కె. ఎన్. సింగ్", "25 నవంబర్ 1991 – 12 డిసెంబర్ 1991"],["ఎం. హెచ్. కానియా", "13 డిసెంబర్ 1991 – 17 నవంబర్ 1992"],["ఎల్. ఎం. శర్మ", "18 నవంబర్ 1992 – 11 ఫిబ్రవరి 1993"],["ఎం. ఎన్. వెంకటాచలయ్య", "12 ఫిబ్రవరి 1993 – 24 అక్టోబర్ 1994"],["ఎ. ఎం. అహ్మది", "25 అక్టోబర్ 1994 – 24 మార్చి 1997"],["జె. ఎస్. వర్మ", "25 మార్చి 1997 – 17 జనవరి 1998"],["ఎం. ఎం. పుంచ్ఛీ", "18 జనవరి 1998 – 9 అక్టోబర్ 1998"],["ఎ. ఎస్. ఆనంద్", "10 అక్టోబర్ 1998 – 31 అక్టోబర్ 2001"],["ఎస్. పి. భరుచా", "1 నవంబర్ 2001 – 5 మే 2002"],["బి. ఎన్. కిర్పాల్", "6 మే 2002 – 7 నవంబర్ 2002"],["జి. బి. పట్నాయక్", "8 నవంబర్ 2002 – 18 డిసెంబర్ 2002"],["వి. ఎన్. ఖరే", "19 డిసెంబర్ 2002 – 1 మే 2004"],["ఎస్. రాజేంద్ర బాబు", "2 మే 2004 – 31 మే 2004"],["ఆర్. సి. లహోటి", "1 జూన్ 2004 – 31 అక్టోబర్ 2005"],["వై. కె. సబర్వాల్", "1 నవంబర్ 2005 – 13 జనవరి 2007"],["కె. జి. బాలకృష్ణన్", "14 జనవరి 2007 – 11 మే 2010"],["ఎస్. హెచ్. కపాడియా", "12 మే 2010 – 28 సెప్టెంబర్ 2012"],["అల్తమాస్ కబీర్", "29 సెప్టెంబర్ 2012 – 18 జూలై 2013"],["పి. సదాశివం", "19 జూలై 2013 – 26 ఏప్రిల్ 2014"],["ఆర్. ఎం. లోధా", "27 ఏప్రిల్ 2014 – 27 సెప్టెంబర్ 2014"],["హెచ్. ఎల్. దత్తు", "28 సెప్టెంబర్ 2014 – 2 డిసెంబర్ 2015"],["టి. ఎస్. ఠాకూర్", "3 డిసెంబర్ 2015 – 3 జనవరి 2017"],["జె. ఎస్. ఖేహర్", "4 జనవరి 2017 – 27 ఆగస్టు 2017"],["దీపక్ మిశ్రా", "28 ఆగస్టు 2017 – 2 అక్టోబర్ 2018"],["రంజన్ గొగోయ్", "3 అక్టోబర్ 2018 – 17 నవంబర్ 2019"],["శరద్ అరవింద్ బాబ్డే", "18 నవంబర్ 2019 – 23 ఏప్రిల్ 2021"],["ఎన్. వి. రమణ", "24 ఏప్రిల్ 2021 – 26 ఆగస్టు 2022"],["ఉదయ్ ఉమేశ్ లలిత్", "27 ఆగస్టు 2022 – 8 నవంబర్ 2022"],["ధనంజయ వై. చంద్రచూడ్", "9 నవంబర్ 2022 – ప్రస్తుతం"] ] },
+        "en": { "title": "Chief Justices of India", "headers": ["Name", "Tenure"], "list": [ ["H. J. Kania", "26 January 1950 – 6 November 1951"],["M. Patanjali Sastri", "7 November 1951 – 3 January 1954"],["Mehr Chand Mahajan", "4 January 1954 – 22 December 1954"],["Bijan Kumar Mukherjea", "23 December 1954 – 31 January 1956"],["Sudhi Ranjan Das", "1 February 1956 – 30 September 1959"],["Bhuvaneshwar Prasad Sinha", "1 October 1959 – 31 January 1964"],["P. B. Gajendragadkar", "1 February 1964 – 15 March 1966"],["A. K. Sarkar", "16 March 1966 – 29 June 1966"],["K. Subba Rao", "30 June 1966 – 11 April 1967"],["K. N. Wanchoo", "12 April 1967 – 24 February 1968"],["M. Hidayatullah", "25 February 1968 – 16 December 1970"],["J. C. Shah", "17 December 1970 – 21 January 1971"],["S. M. Sikri", "22 January 1971 – 25 April 1973"],["A. N. Ray", "26 April 1973 – 27 January 1977"],["M. Hameedullah Beg", "28 January 1977 – 21 February 1978"],["Y. V. Chandrachud", "22 February 1978 – 11 July 1985"],["P. N. Bhagwati", "12 July 1985 – 20 December 1986"],["R. S. Pathak", "21 December 1986 – 18 June 1989"],["E. S. Venkataramiah", "19 June 1989 – 17 December 1989"],["S. Mukharji", "18 December 1989 – 25 September 1990"],["Ranganath Misra", "26 September 1990 – 24 November 1991"],["K. N. Singh", "25 November 1991 – 12 December 1991"],["M. H. Kania", "13 December 1991 – 17 November 1992"],["L. M. Sharma", "18 November 1992 – 11 February 1993"],["M. N. Venkatachaliah", "12 February 1993 – 24 October 1994"],["A. M. Ahmadi", "25 October 1994 – 24 March 1997"],["J. S. Verma", "25 March 1997 – 17 January 1998"],["M. M. Punchhi", "18 January 1998 – 9 October 1998"],["A. S. Anand", "10 October 1998 – 31 October 2001"],["S. P. Bharucha", "1 November 2001 – 5 May 2002"],["B. N. Kirpal", "6 May 2002 – 7 November 2002"],["G. B. Pattanaik", "8 November 2002 – 18 December 2002"],["V. N. Khare", "19 December 2002 – 1 May 2004"],["S. Rajendra Babu", "2 May 2004 – 31 May 2004"],["R. C. Lahoti", "1 June 2004 – 31 October 2005"],["Y. K. Sabharwal", "1 November 2005 – 13 January 2007"],["K. G. Balakrishnan", "14 January 2007 – 11 May 2010"],["S. H. Kapadia", "12 May 2010 – 28 September 2012"],["Altamas Kabir", "29 September 2012 – 18 July 2013"],["P. Sathasivam", "19 July 2013 – 26 April 2014"],["R. M. Lodha", "27 April 2014 – 27 September 2014"],["H. L. Dattu", "28 September 2014 – 2 December 2015"],["T. S. Thakur", "3 December 2015 – 3 January 2017"],["J. S. Khehar", "4 January 2017 – 27 August 2017"],["Dipak Misra", "28 August 2017 – 2 October 2018"],["Ranjan Gogoi", "3 October 2018 – 17 November 2019"],["Sharad Arvind Bobde", "18 November 2019 – 23 April 2021"],["N. V. Ramana", "24 April 2021 – 26 August 2022"],["Uday Umesh Lalit", "27 August 2022 – 8 November 2022"],["Dhananjaya Y. Chandrachud", "9 November 2022 – Incumbent"] ] }
+    }
+  };
+
+  let currentLanguage = 'te';
+
+  function switchLanguage(lang) {
+    currentLanguage = lang;
+    displayData();
+  }
+
+  function displayData() {
+    const selectedPosition = document.getElementById('positionSelector').value;
+    const displayDiv = document.getElementById('dataDisplay');
+    const selectedData = data[selectedPosition][currentLanguage];
+
+    let tableHTML = `<h3>${selectedData.title}</h3>`;
+    tableHTML += '<table>';
+    tableHTML += '<thead><tr>';
+    selectedData.headers.forEach(header => {
+      tableHTML += `<th>${header}</th>`;
+    });
+    tableHTML += '</tr></thead>';
+    
+    tableHTML += '<tbody>';
+    selectedData.list.forEach(item => {
+      tableHTML += '<tr>';
+      item.forEach(cell => {
+        tableHTML += `<td>${cell}</td>`;
+      });
+      tableHTML += '</tr>';
+    });
+    tableHTML += '</tbody>';
+
+    tableHTML += '</table>';
+    displayDiv.innerHTML = tableHTML;
+  }
+
+  // Initial display on page load
+  window.onload = displayData;
+</script>
+
+</body>
+</html>
